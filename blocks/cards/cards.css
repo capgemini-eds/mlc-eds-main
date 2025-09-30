@@ -1,146 +1,216 @@
 .cards-container .default-content-wrapper {
     align-items: center;
     text-align: center;
+}
 
-    h1,
-    h2,
-    h3 {
-        font-size: 40px;
-        text-align: center;
-        padding-bottom: 20px;
+.cards-container .default-content-wrapper h1,
+.cards-container .default-content-wrapper h2,
+.cards-container .default-content-wrapper h3 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
-        strong {
-            background-image: linear-gradient(
-                98.02deg,
-                #991ad6 -2.41%,
-                #da1710 112.37%
-            );
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-    }
+.cards-container .default-content-wrapper h1 strong,
+.cards-container .default-content-wrapper h2 strong,
+.cards-container .default-content-wrapper h3 strong {
+    background-image: linear-gradient(98.02deg, #991ad6 -2.41%, #da1710 112.37%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .cards {
     position: relative;
     margin: 50px auto;
-    ul {
-        position: relative;
-        list-style: none;
-        margin: 0 auto;
-        padding: 0;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 24px;
+}
 
-        li {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            border: 1px solid #e0e0e0;
-            overflow: hidden;
-            min-height: 400px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        li > div {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            flex: 1 1 auto;
-        }
-    }
+.cards strong em a:any-link{
+    color: #c95109;
+    font-weight: 700;
+    font-size: medium;
+    font-style: normal;
+    font-size: 21px;
+}
 
-    .button:any-link {
-        background-color: unset;
-        color: black;
-        white-space: wrap;
-    }
-    .button:any-link:hover,
-    a:any-link:hover {
-        border: 0;
-        border-bottom: 0;
-        padding: 0;
-    }
+.cards ul {
+    position: relative;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    height: auto;
+}
 
-    .cards-card-body {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin: 5px 15px;
-        padding-bottom: 30px;
+.cards ul li {
+    width: 100%;
+    background-color: transparent;
+    color: #181816 !important;
+    font-size: 16px;
+    overflow: hidden;
+    min-height: 400px;
+    max-width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-        h1,
-        h2,
-        h3 {
-            color: black;
-            font-size: 23px;
-            width: 100%;
-        }
+.cards ul li > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+}
 
-        /* Remove arrow from heading links */
+.cards .button:any-link {
+    background-color: unset;
+    color: black;
+    white-space: wrap;
+}
 
-        p {
-            margin-top: 10px;
-        }
+.cards .button:any-link:hover,
+.cards a:any-link:hover {
+    padding: 0;
+    border: none;
+}
 
-        a,
-        .button {
-            width: 100%;
-            height: 100%;
-            display: block;
-            text-align: start;
-            margin: 0;
-            padding: 0 5px 0 0; /* space for arrow */
-            line-height: normal;
-            border: 0;
-            color: black;
-            position: relative;
-        }
+.cards-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5px 15px;
+    padding-bottom: 30px;
+}
 
-        a::after,
-        .button::after {
-            content: "\203A";
-            color: red;
-            position: absolute;
-            right: 8px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.2em;
-            pointer-events: none;
-        }
+.cards-card-body h1,
+.cards-card-body h2,
+.cards-card-body h3 {
+    color: black;
+    font-size: 23px;
+    width: 100%;
+}
 
-        .button:any-link:hover,
-        a:any-link:hover {
-            text-decoration: underline;
-            transition: text-decoration 0.2s ease-in-out;
-        }
-    }
-    .cards-card-image {
-        line-height: 0;
-        width: 100%;
-        height: 60%;
-        overflow: hidden;
-    }
-    .cards-card-image img {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
+.cards-card-body p {
+    margin-top: 10px;
+}
 
-    .cards-card-body a:hover ~ .cards-card-image img,
-    .cards-card-body .button:hover ~ .cards-card-image img {
-        transform: scale(1.08);
-    }
+.cards-card-body a,
+.cards-card-body .button {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: start;
+    margin: 0;
+    padding: 0 5px 0 0;
+    line-height: normal;
+    border: none;
+    color: black;
+    position: relative;
+}
 
-    /* For common card structure: zoom image when parent li is hovered */
-    li:hover .cards-card-image img {
-        transform: scale(1.08);
-    }
+.cards-card-body .button:any-link:hover,
+.cards-card-body a:any-link:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.2s ease-in-out;
+}
+
+.cards-card-image {
+    line-height: 0;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.cards-card-image img {
+    width: 100%;
+    height: 200px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.cards.horizontal {
+    display: flex;
+    margin: 40px 0;
+}
+
+.cards.horizontal .cards-card-image {
+    padding: 10px;
+    height: auto;
+}
+
+.cards.horizontal .cards-card-image img {
+    aspect-ratio: 16 / 9;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.cards.horizontal ul {
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+
+.cards.horizontal ul li {
+    border: none;
+    box-shadow: none;
+    flex-direction: row;
+    max-width: 500px;
+    border-radius: 5px;
+    font-size: small;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cards.horizontal ul li div {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards.horizontal ul li a:any-link::after {
+    display: none;
+}
+
+.cards.horizontal ul li a:any-link {
+    color: #037691;
+}
+
+.cards.horizontal ul li strong > a:any-link {
+    background-color: #c95109;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 1px;
+    text-align: center;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.cards.horizontal ul li strong > a:any-link:hover {
+    background-color: #bc4401;
+    text-decoration: none !important;
+    transition: none !important;
+    padding: 15px 15px;
+}
+
+.cards.important-updates {
+    border-radius: 10px;
+    margin: 50px 100px;
+}
+
+.cards.important-updates > ul{
+    padding: 0 20px;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+.cards.important-updates > ul > li{
+    background-color: #f0eeea;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.cards.important-updates a:any-link{
+    color: #037691;
 }
