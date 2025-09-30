@@ -1,0 +1,222 @@
+.hero-banner-block {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 430px; 
+        border-radius: 12px;
+        object-fit: cover;
+        object-position: center center;
+        position: relative;
+        aspect-ratio: 4/3; /* Maintain aspect ratio */
+    }
+    .hero-overlay {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        z-index: 1;
+        top: 0;
+        max-width: 90%;
+        color: #fff;
+        font-size: 16px;
+        margin: 1rem;
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: 28px;
+            line-height: 90%;
+            text-transform: uppercase;
+
+            strong {
+                color: #ffd9f7;
+            }
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    .button-container {
+        a {
+            border-radius: 5px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+        }
+        a:hover {
+            background-color: grey;
+            color: #fff;
+        }
+    }
+}
+ .hero-wrapper:has(.hero-full) {
+        /* margin: 0;
+        padding: 0; */
+        border-radius: 0px !important;
+        text-align: left;
+
+        img{
+          object-position: center right;
+        }
+
+        .hero-overlay {
+            max-width: 100%;
+            margin-top: 10%;
+            
+
+            h1,h2,h3,h4 {
+                font-size: 24px;
+                line-height: 1.25;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+
+@media (min-width: 724px) and (max-width: 1023px) {
+    .hero-banner-block img {
+        max-height: 350px;
+        border-radius: 16px;
+    }
+    .hero-banner-block .hero-overlay {
+        max-width: 50%;
+        font-size: 18px;
+        margin: 1.5rem;
+    }
+    .hero-banner-block .hero-overlay h1,
+    .hero-banner-block .hero-overlay h2,
+    .hero-banner-block .hero-overlay h3,
+    .hero-banner-block .hero-overlay h4 {
+        font-size: 32px;
+    }
+    .hero-banner-block .hero-overlay p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .hero-banner-block img {
+        max-height: 470px;
+        border-radius: 20px;
+    }
+    .hero-banner-block .hero-overlay {
+        max-width: 50%;
+        font-size: 20px;
+        margin: 4rem;
+    }
+    .hero-banner-block .hero-overlay h1,
+    .hero-banner-block .hero-overlay h2,
+    .hero-banner-block .hero-overlay h3,
+    .hero-banner-block .hero-overlay h4 {
+        font-size: 50px;
+        line-height: 90%;
+        margin-top: 0;
+        letter-spacing: -3.45px;
+        font-weight: bold;
+    }
+    .hero-banner-block .hero-overlay p {
+        font-size: 24px;
+    }
+    .hero-wrapper:has(.hero-full) {
+      .hero-overlay {
+         
+          h1,h2,h3,h4 {
+              font-size: 40px;
+              line-height: 1.25;
+          }
+          p {
+              font-size: 24px;
+          }
+      }
+  }
+   
+}
+
+/* 
+.hero-banner-block {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    position: relative;
+  }
+  .hero-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    max-width: 90%;
+    color: #fff;
+    font-size: 16px;
+    margin: 1rem;
+
+    h1, h2, h3, h4 {
+      font-size: 60px;
+      line-height: 90%;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .hero-banner-block img {
+    max-height: 350px;
+    border-radius: 16px;
+  }
+  .hero-banner-block .hero-overlay {
+    max-width: 70%;
+    font-size: 18px;
+    margin: 1.5rem;
+  }
+  .hero-banner-block .hero-overlay h1,
+  .hero-banner-block .hero-overlay h2,
+  .hero-banner-block .hero-overlay h3,
+  .hero-banner-block .hero-overlay h4 {
+    font-size: 32px;
+  }
+  .hero-banner-block .hero-overlay p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-banner-block img {
+    max-height: 470px;
+    border-radius: 20px;
+  }
+  .hero-banner-block .hero-overlay {
+    max-width: 60%;
+    font-size: 20px;
+    margin: 2rem;
+  }
+  .hero-banner-block .hero-overlay h1,
+  .hero-banner-block .hero-overlay h2,
+  .hero-banner-block .hero-overlay h3,
+  .hero-banner-block .hero-overlay h4 {
+    font-size: 40px;
+  }
+  .hero-banner-block .hero-overlay p {
+    font-size: 20px;
+  }
+} */

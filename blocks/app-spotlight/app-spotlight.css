@@ -1,0 +1,150 @@
+
+.app-spotlight {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    max-height: none;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+
+    div:first-child > div:first-child {
+        display: flex;
+        justify-content: center;
+      }
+
+    img {
+        width: 100%;
+        max-width: fit-content;
+        object-fit: cover;
+        height: auto;
+        max-height: 450px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .app-spotlight--text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 36px;
+    }
+
+    .app-spotlight--buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        .button-container{
+            margin: 0;
+        }
+
+        .button-container > a {
+            font-size: 15px;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: center;
+            margin: 6px 0;
+        }
+
+        .button-container:last-child {
+            a {
+                background-color: white;
+                color: black;
+                border: 1px solid red;
+            }
+            a:hover {
+                color: rgb(255, 255, 255);
+                background-color: rgb(229, 93, 88);
+                border-color: rgb(218, 23, 16);
+                text-decoration: none;
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 30px;
+        font-weight: 400;
+        strong {
+            background-image: linear-gradient(
+                98.02deg,
+                #991ad6 -2.41%,
+                #da1710 112.37%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+}
+.app-spotlight > div:first-child {
+    flex: 1;
+   }
+   
+.app-spotlight > div:last-child {
+    
+    flex: 1;
+}
+@media (min-width: 724px) and (max-width: 1023px) {
+    .app-spotlight {
+        flex-direction: row;
+        height: 100%;
+        max-height: 673px;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 32px;
+
+        h1,
+        h2,
+        h3 {
+            font-size: 40px;
+        }
+        img {
+            max-height: 100%;
+            border-radius: 16px;
+        }
+        .app-spotlight--text {
+            width: 50%;
+            /* margin: 100px 0; */
+            height: 70%;
+        }
+        .app-spotlight--buttons {
+            flex-direction: column;
+            gap: 20px;
+            .button-container > a {
+                display: inline;
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 1024px) {
+    .app-spotlight {
+        flex-direction: row;
+
+        h1,
+        h2,
+        h3 {
+            font-size: 44px;
+        }
+        .app-spotlight img {
+            max-height: 100%;
+            border-radius: 20px;
+        }
+        .app-spotlight {
+            gap: 40px;
+        }
+        .app-spotlight--buttons {
+            flex-direction: row;
+            gap: 20px;
+        }
+        .app-spotlight--text {
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+    }
+}

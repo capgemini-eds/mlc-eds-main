@@ -1,0 +1,67 @@
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    font-size: 16px;
+
+    border-bottom: 1px solid #ccc;
+
+    .button:any-link,
+    a:any-link {
+        background-color: unset;
+        color: black;
+        white-space: wrap;
+    }
+    .button:any-link:hover,
+    a:any-link:hover {
+        border: 0;
+        border-bottom: 0;
+        padding: 0;
+        text-decoration: underline;
+    }
+
+    a:any-link::before {
+        content: "\203A";
+        color: red;
+        margin-right: 5px;
+        font-size: 2rem;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .links {
+        flex-direction: row;
+        font-size: 16px;
+        justify-content: flex-start;
+        align-items: center;
+
+        div {
+            flex: 1 1 50%;
+            margin-bottom: 20px;
+            flex-direction: row;
+        }
+        a:any-link::before {
+            content: "\203A";
+            color: red;
+            margin-right: 5px;
+            font-size: 1.2rem;
+        }
+    }
+    .links a:any-link {
+        font-size: 16px;
+    }
+}

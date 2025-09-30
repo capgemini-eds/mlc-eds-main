@@ -1,0 +1,54 @@
+.cards-carousel {
+    position: relative;
+    display: flex;
+    gap: 26px;
+    margin: 60px auto;
+    background-color: #fff;
+    max-width: 1000px;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    background-color: transparent;
+
+    > div{
+        display: flex;
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 120px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px 15px;
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); */
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.19);
+        margin: 4px;
+
+        a:any-link, .button:any-link {
+            text-decoration: none;
+            color: inherit;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+        }
+        a:any-link:hover, .button:any-link:hover {
+            text-decoration: none;
+
+        }
+
+        .button-container{
+            max-width: 130px;
+            word-break: break-word;
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            padding: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            word-wrap: break-word;
+        }
+    }
+
+}
