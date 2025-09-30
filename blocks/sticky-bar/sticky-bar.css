@@ -27,3 +27,26 @@
         text-decoration: underline !important;
     }
 }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+        .sticky-bar {
+            flex-direction: column;
+            border-radius: 6px;
+        }
+        .sticky-bar > div {
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            padding: 10px 8px;
+            border-bottom: none;
+            border-right: none;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+        }
+        .sticky-bar a:any-link {
+            font-size: 16px;
+            padding: 6px 0;
+            text-align: center;
+        }
+    }
