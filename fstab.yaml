@@ -1,4 +1,4 @@
 mountpoints:
   /:
-    url: https://content.da.live/capgemini-eds/westpac-eds-main/
+    url: https://content.da.live/capgemini-eds/mlc-eds-main/
     type: markup

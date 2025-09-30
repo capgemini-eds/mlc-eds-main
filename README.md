@@ -1,16 +1,9 @@
 # Your Project's Title...
-Westpac - Personal, Business and Corporate Banking
+Superannuation - Super Accounts, Funds & Products | MLC Australia
 ## Environments
-- Preview: https://main--westpac-eds-main--capgemini-eds.aem.page/
-- Live: https://main--westpac-eds-main--capgemini-eds.aem.live/
+- Preview: https://main--mlc-eds-main--capgemini-eds.aem.page/
+- Live: https://main--mlc-eds-main--capgemini-eds.aem.live/
 
-## Documentation
-
-Before using the aem-boilerplate, we recommand you to go through the documentation on https://www.aem.live/docs/ and more specifically:
-1. [Developer Tutorial](https://www.aem.live/developer/tutorial)
-2. [The Anatomy of a Project](https://www.aem.live/developer/anatomy-of-a-project)
-3. [Web Performance](https://www.aem.live/developer/keeping-it-100)
-4. [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks)
 
 ## Installation
 
