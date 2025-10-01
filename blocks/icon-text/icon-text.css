@@ -36,3 +36,30 @@
         align-items: center;
     }
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .icon-text {
+        flex-direction: column;
+        gap: 12px;
+        margin: 20px auto;
+        align-items: center;
+    }
+    .icon-text > div {
+        width: 100%;
+        padding: 0 8px;
+    }
+    .icon-text h1,
+    .icon-text h2,
+    .icon-text h3 {
+        font-size: 22px;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+    .icon-text p {
+        font-size: 15px;
+        padding: 0 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
