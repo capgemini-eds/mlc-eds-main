@@ -14,7 +14,11 @@
 .cards-container .default-content-wrapper h1 strong,
 .cards-container .default-content-wrapper h2 strong,
 .cards-container .default-content-wrapper h3 strong {
-    background-image: linear-gradient(98.02deg, #991ad6 -2.41%, #da1710 112.37%);
+    background-image: linear-gradient(
+        98.02deg,
+        #991ad6 -2.41%,
+        #da1710 112.37%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -25,7 +29,7 @@
     margin: 50px auto;
 }
 
-.cards strong em a:any-link{
+.cards strong em a:any-link {
     color: #c95109;
     font-weight: 700;
     font-size: medium;
@@ -198,21 +202,37 @@
     margin: 50px 100px;
 }
 
-.cards.important-updates > ul{
+.cards.important-updates > ul {
     padding: 0 20px;
     gap: 30px;
     width: 100%;
     margin: 0 auto;
 }
-.cards.important-updates > ul > li{
+.cards.important-updates > ul > li {
     background-color: #f0eeea;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     gap: 20px;
     padding: 10px 20px;
 }
 
-.cards.important-updates a:any-link{
+.cards.important-updates a:any-link {
     color: #037691;
+}
+.image-top > ul li {
+    flex-direction: column !important;
+
+    .cards-card-image{
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        width: 100% !important;
+        height: auto;
+    }
+    img {
+        aspect-ratio: 1;
+        width: none;
+        height: auto;
+    }
 }
 
 /* Mobile Responsive Styles */
