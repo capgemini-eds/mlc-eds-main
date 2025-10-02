@@ -28,6 +28,24 @@
 .columns.image-text-col *{
   text-align: left;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .columns.image-text-col > div {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 24px;
+    }
+    .columns.image-text-col * {
+        text-align: left;
+        font-size: 15px;
+    }
+    .columns > div {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+}
 @media (width >= 900px) {
     .columns > div {
         align-items: center;
