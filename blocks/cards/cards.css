@@ -181,25 +181,26 @@
 }
 
 .cards.horizontal ul li strong > a:any-link {
-    background-color: #c95109;
-    color: white;
-    padding: 15px 15px;
-    border-radius: 1px;
+    background-color: var(--button-color);
+    border-radius: 100px;
+    color: var(--text-color);
+    padding: 12px 15px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 300;
     font-size: medium;
 }
 
 .cards.horizontal ul li strong > a:any-link:hover {
-    background-color: #bc4401;
+    background-color: var(--button-hover-color);
     text-decoration: none !important;
     transition: none !important;
-    padding: 15px 15px;
+    padding: 12px 15px;
+
 }
 
 .cards.important-updates {
     border-radius: 10px;
-    margin: 50px 100px;
+    margin: 50px 50px;
 }
 
 .cards.important-updates > ul {
