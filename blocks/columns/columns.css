@@ -19,9 +19,14 @@
     display: block;
 }
 
-.columns.image-text-cols {
-    margin-left: 60px;
-    margin-right: 60px;
+.columns.image-text-col > div {
+    margin-left: 160px;
+    margin-right: 150px;
+    margin-bottom: 40px;
+}
+
+.columns.image-text-col *{
+  text-align: left;
 }
 @media (width >= 900px) {
     .columns > div {

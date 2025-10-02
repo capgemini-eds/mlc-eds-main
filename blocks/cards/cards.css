@@ -53,10 +53,7 @@
     background-color: transparent;
     color: #181816 !important;
     font-size: 16px;
-    overflow: hidden;
-    min-height: 400px;
     max-width: 350px;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -76,7 +73,6 @@
 
 .cards .button:any-link:hover,
 .cards a:any-link:hover {
-    padding: 0;
     border: none;
 }
 
@@ -103,7 +99,6 @@
 .cards-card-body a,
 .cards-card-body .button {
     width: 100%;
-    height: 100%;
     display: block;
     text-align: start;
     margin: 0;
@@ -117,7 +112,6 @@
 .cards-card-body .button:any-link:hover,
 .cards-card-body a:any-link:hover {
     text-decoration: underline;
-    transition: text-decoration 0.2s ease-in-out;
 }
 
 .cards-card-image {

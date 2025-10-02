@@ -34,7 +34,7 @@
             text-transform: uppercase;
 
             strong {
-                color: #ffd9f7;
+                color: #fff6de !important;
             }
         }
         p {
@@ -44,16 +44,15 @@
     }
     .button-container {
         a {
-            border-radius: 5px;
-            background-color: #fff;
+            border-radius: 100px;
+            background-color: var(--button-color);
             color: #000;
-            border: none;
-            padding: 10px 15px;
+            border: 1px solid black;
+            padding: 12px 30px;
             margin-bottom: 10px;
         }
         a:hover {
-            background-color: grey;
-            color: #fff;
+            background-color: var( --button-hover-color);
         }
     }
 }
