@@ -335,5 +335,6 @@ main .section.light-pink {
         text-align: center;
     }
 }
-
-
+.center-align p {
+  text-align: center;
+}
