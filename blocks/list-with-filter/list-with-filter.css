@@ -1,0 +1,157 @@
+.list-with-filter-container .tabs-panel {
+  padding: 0 !important;
+}
+
+.list-with-filter .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.list-with-filter .card-container .card {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  background: #fff;
+  overflow: hidden;
+  transition: transform 0.2s;
+  max-width: calc(25% - 20px);
+  box-shadow: 0 4px 32px 0 rgba(0 0 0 / 8%);
+  border-radius: 4px;
+}
+
+.list-with-filter .card-container .card:hover {
+  transform: translateY(-5px);
+}
+
+.list-with-filter .card-container .card img {
+  width: auto;
+  height: 140px;
+  display: block;
+  object-fit: cover;
+  margin: 0%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.list-with-filter .card-content {
+  padding: 15px;
+}
+
+.list-with-filter .card-description {
+  color: var(--colour-text-read-only-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px
+}
+
+.list-with-filter .card a {
+  color: #E10A0A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.list-with-filter .card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list-with-filter .badge {
+  padding: 4px 8px;
+  background: var(--colour-surface-read-only-secondary);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--colour-text-read-only-primary);
+  display: inline-block;
+}
+
+.list-with-filter .card-badge span {
+  color: var(--colour-surface-read-only-primary-inverse);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  border-radius: 4px;
+  background: var(--colour-surface-read-only-secondary);
+}
+
+
+.list-with-filter .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--colour-text-read-only-primary);
+  margin: 0;
+  line-height: 28px;
+}
+
+.list-with-filter .card-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--colour-text-read-only-secondary);
+}
+
+
+.list-with-filter .card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.list-with-filter .tag {
+  padding: 4px 12px;
+  background: var(--bg-white);
+  border-radius: 24px;
+  outline: 2px solid var(--bg-hero);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bg-hero);
+}
+
+.list-with-filter .tag-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--bg-white);
+  border-radius: 24px;
+  outline: 2px solid var(--bg-hero);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-with-filter .icon-bar {
+  width: 18px;
+  height: 4px;
+  background: var(--bg-hero);
+}
+
+.list-with-filter .load-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: transparent;
+  color: var(--bg-hero);
+  border: 2px solid var(--bg-hero);
+  gap: var(--padding-24, 24px);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+@media (width <=1200px) {
+  .list-with-filter .card-container .card {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (width <=600px) {
+  .list-with-filter .card-container .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

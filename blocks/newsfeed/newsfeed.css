@@ -1,0 +1,93 @@
+/* newsfeed.css - cards layout with 50% width items */
+
+.newsfeed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: -8px; /* optional to neutralize outer spacing */
+}
+
+.newsfeed-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+/* Each item shows as a card and takes ~50% width (two columns) */
+.newsfeed-item {
+    flex: 0 0 calc(33% - 16px);
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    transition: transform 160ms ease, box-shadow 160ms ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card hover/focus affordance */
+.newsfeed-item:hover,
+.newsfeed-item:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* Image/media inside card */
+.newsfeed-item img,
+.newsfeed-item .media {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Content structure */
+.newsfeed-item .title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: #0f172a;
+}
+
+.newsfeed-item .excerpt {
+    font-size: 0.95rem;
+    color: #475569;
+    margin: 0 0 12px;
+    flex: 1 1 auto;
+}
+
+/* Meta/actions row */
+.newsfeed-item .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* Small screens: single column */
+@media (max-width: 700px) {
+    .newsfeed-item {
+        flex: 0 0 100%;
+    }
+}
+a.newsfeed-link,
+a.newsfeed-link:visited,
+a.newsfeed-link:hover,
+a.newsfeed-link:active,
+a.newsfeed-link:focus {
+    color: #000;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.newsfeed-item {
+    border-bottom: 3px solid var(--button-color);
+}
